@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Flexbox Exercise</title>
+</head>
+
+<style>
+        .container { 
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            height: 800px;
+            justify-content: space-between;
+        }  
+         
+        .header {
+            height: 65px;
+            width: 100%;
+            background-color: darkgoldenrod;
+        }
+
+        .column{
+            display: flex;
+        }
+
+        .sidebar{
+            display: flex;
+            height: 500px;
+            width: 30%;
+            background-color: darkolivegreen;
+            margin-top: -100px;
+            margin-right: 20px;
+        }
+
+        .content {
+            display: flex;
+            height: 400px;
+            width: 70%;
+            background-color: sandybrown;
+            margin-top: -100px;
+        }
+        
+        .footer {
+            display: flex;
+            height: 50px;
+            width: 100%;
+            background-color: tan;
+            
+        }
+    }
+
+</style>
+
+<body>
+<div class="container">
+    <div class="header">Header</div>
+    <div class="column">
+        <div class="sidebar">Column 1</div>
+        <div class="content">Column 2</div>
+    </div>
+    <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>
